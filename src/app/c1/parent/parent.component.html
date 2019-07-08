@@ -1,0 +1,10 @@
+<app-child [val]="startValue" (manchies)="endValue = $event" (num1)="num1 = $event"></app-child>
+
+<h3>Final Value:</h3>
+<input (input)="startValue = $event.target.value"/><br>
+<input (input)="num2 = $event.target.value" />
+<p class="rt">
+    מילד להורה:<br>
+
+{{ endValue }}</p>
+<div [innerHTML]="sum(num1,num2)"></div>
